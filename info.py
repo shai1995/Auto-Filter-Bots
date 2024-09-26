@@ -21,7 +21,7 @@ def is_enabled(value, default):
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1612652792 1255023013').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1612652792').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/Mradbot_Admin')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002228536126'))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002444360071').split()]
@@ -34,7 +34,7 @@ QR_CODE = environ.get('QR_CODE', 'https://envs.sh/0-Y.jpg')
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002468523460'))
-URL = environ.get('URL', 'https://married-milissent-filmfree-333e214f.koyeb.app')
+URL = environ.get('URL', 'verbal-limpet-mradbot-353c4815.koyeb.app')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
@@ -43,8 +43,8 @@ TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/5rsz9fWu3Ic?si=AZyGM700ABk-
 TUTORIAL2 = environ.get("TUTORIAL2", "")
 TUTORIAL3 = environ.get("TUTORIAL3", "")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "fc837447971bc7534016e082b63f59c8a3f926f8")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shrinkforearn.in")
+SHORTENER_API = environ.get("SHORTENER_API", "2bb1874d1cead1c3145196105eef40dad2090ef4")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "earn4link.in")
 SHORTENER_API2 = environ.get("SHORTENER_API2", "")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "")
