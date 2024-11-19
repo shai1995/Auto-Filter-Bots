@@ -7,7 +7,6 @@ import asyncio
 import json
 from collections import defaultdict
 from pyrogram import Client
-import requests  # Import requests for making HTTP requests
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -39,7 +38,7 @@ BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002468523460'))
 URL = environ.get('URL', 'rigid-ofella-movieboot-cd56b895.koyeb.app')
 
 # verify system vars
-IS_VERIFY = False  # Set verification off
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002325909402'))
 TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/5rsz9fWu3Ic?si=AZyGM700ABk-fUNB")
 TUTORIAL2 = environ.get("TUTORIAL2", "")
@@ -53,7 +52,6 @@ SHORTENER_API3 = environ.get("SHORTENER_API3", "")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "3600"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
-
 
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
@@ -76,4 +74,3 @@ PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 SPELL_CHECK = is_enabled('SPELL_CHECK', True)
 LINK_MODE = is_enabled('LINK_MODE', True)
 PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
-IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
